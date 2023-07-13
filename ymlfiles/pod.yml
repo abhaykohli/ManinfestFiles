@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: busybox-pod
+  name: nginx-container
 spec:
   containers:
   - name: busybox-container
-    image: busybox
+    image: nginx:latest
     command: ["sleep", "3600"]  # Just an example command to keep the Pod running for 1 hour
